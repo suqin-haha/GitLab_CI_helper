@@ -1,0 +1,23 @@
+testExample:a:
+    script:
+    - echo "test-a"
+    parallel: 1
+
+
+testExample:b:
+  needs: 
+    - testExample:a
+  script:
+    - echo "test-b"
+
+testExample:c:
+    script:
+    - echo "test-c"
+    parallel:
+      matrix:
+        - TESTFILE:
+            - "f1"
+            - "f2"
+            - "f3"
+            - "f4"
+
