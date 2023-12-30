@@ -1,7 +1,7 @@
 # GitLab_CI_helper
 This script helps you run the minimum possible pipeline to target a specific job (or number of jobs) from a specific branch/commit (commit from current branch). It could also let you repeat jobs multiple times. If run without arguments, it’ll default to running the minimum pipeline required to run all the FAILED jobs from the current branch (if a pipeline exists). This script was specifically created to help engineers debug CI pipeline failures in the most resource efficient way possible (less compute resources per pipeline and less time to wait for a job to run).
 
-Instructions
+## Instructions
 
 First you’ll need to authenticate to gitlab.com using glab (in nix-shell) and follow the instructions in the CLI:
 
@@ -21,7 +21,7 @@ Usage to target specific jobs (job name format is same with the name in Gitlab):
 
 
 
-Note:
+#### Note:
 
 The script support to be used in outside nix-shell with `run-in-nix-shell.sh`.  Recommend enter nix-shell first for speed and compatibility.
 
@@ -43,7 +43,7 @@ After
 
  
 
-How does it work?
+## How does it work?
 
 Dependencies: python3, glab(gitlab CLI), pyyaml, and git.
 
