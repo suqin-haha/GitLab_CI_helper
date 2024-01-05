@@ -32,11 +32,11 @@ Usage to target specific jobs (job name format is same with the name in Gitlab):
 
 ### Example
 Before
-
+![Alt text](image.png)
 Clustering job failed
 
 After
-
+![Alt text](image-1.png)
 
 
  
